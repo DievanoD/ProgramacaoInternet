@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cadastro</title>
+<link href="css/bootstrap-modificado.css" rel="stylesheet">
+<link href="css/estilo.css" rel="stylesheet">
+</head>
+
+<body>
+	<br>
+	<div> <img class="marcadagua" src="img/iftm.png"/> </div>
+	<div class="container">
+			<div class="row dadosLogin">
+				<fieldset>
+					<legend>
+						<strong>Cadastro de Usuarios</strong>
+					</legend>
+					<div class="form-group col-md-6">
+						<label for="campo1">Nome</label> <input type="email"
+							class="form-control" name="nome" placeholder="...informe o nome do usuário."
+							required>
+					</div>
+
+					<div class="form-group col-md-6">
+						<label for="campo3">E-mail</label> <input type="text"
+							class="form-control" name="email" placeholder="...informe o endereço de email."
+							required>
+					</div>
+
+					<div class="form-group col-md-6">
+						<label for="campo3">Ano de Ingresso</label> <input type="password"
+							class="form-control" name="anoIngresso" placeholder="...informe o ano."
+							required>
+					</div>
+
+					<div class="form-group col-md-6">
+						<label for="campo3">Tipo</label> <select name="tipoUsuario"
+							class="form-control" required>
+							<option value="">Selecione</option>
+							<option>Administrador</option>
+							<option>Professor</option>
+							<option>Aluno</option>
+						</select>
+					</div>
+
+				</fieldset>
+			</div>
+
+			<br>
+			<div class="row">
+
+				<div class="form-inline botaoesCadastro">
+					<button type="submit" class="btn btn-success">Concluir Cadastro</button>
+					<button type="reset" class="btn btn-success">Limpar</button>
+					<a href="" class="btn btn-success" role="button">Cancelar</a>
+				</div>
+			</div>
+	</div>
+
+	<br>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/jquery.maskedinput.js" type="text/javascript"></script>
+	<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
