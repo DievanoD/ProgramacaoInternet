@@ -1,0 +1,6 @@
+
+Aparecer um novo texto
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onclick
+
+Mudar cor da fonte
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onclick_color

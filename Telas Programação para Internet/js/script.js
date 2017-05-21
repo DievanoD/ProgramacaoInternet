@@ -36,3 +36,52 @@ function ValidarCampoDeSenha()
 		return false;
 	}
 }
+
+function carregamentoInicial()
+{
+  var primeiroCarregamento = true;
+
+  if (primeiroCarregamento)
+  {
+    document.getElementById("ads").style.display = "none";
+	document.getElementById("cienciaComp").style.display = "none";
+    document.getElementById("principal").style.display = "block";
+	document.getElementById("secundario").style.display = "block";
+    primeiroCarregamento = false;
+  }
+
+  else
+  {
+    if (document.getElementById("ads").style.display == "none")
+    {
+      document.getElementById("ads").style.display = "block";
+      document.getElementById("principal").style.display = "block";
+	  document.getElementById("secundario").style.display = "block";
+	  document.getElementById("cienciaComp").style.display = "none";
+    }
+
+    else
+    {
+      //document.getElementById("cadastroAcesso").style.display = "none";
+      //document.getElementById("cadastroEditais").style.display = "block";
+      //document.getElementById("seja_bem_vindo").style.display = "none";
+    }
+  }
+
+}
+
+function mostrarDisciplinasADS()
+{
+    document.getElementById("principal").style.display = "block";
+    document.getElementById("ads").style.display = "block";
+	document.getElementById("secundario").style.display = "block";
+	document.getElementById("cienciaComp").style.display = "none";
+}
+
+function mostrarDisciplinasCC()
+{
+    document.getElementById("principal").style.display = "block";
+    document.getElementById("ads").style.display = "none";
+	document.getElementById("secundario").style.display = "block";
+	document.getElementById("cienciaComp").style.display = "block";
+}
